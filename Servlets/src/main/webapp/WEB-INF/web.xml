@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd" id="WebApp_ID" version="6.0">
+  <display-name>ServletDemo2</display-name>
+  
+<!--  <servlet> -->
+<!-- 	<servlet-name>addServlet1</servlet-name> -->
+<!-- 	 Unique name for the servlet. Used to reference the servlet in the servlet-mapping element.  -->
+ 	
+<!-- 	<servlet-class>com.hema2.AddServlet2</servlet-class> -->
+<!-- 	 Fully qualified class name of the servlet. This class must implement the javax.servlet.Servlet interface.  -->
+<!-- </servlet> -->
+ 	
+<!-- <servlet-mapping> -->
+<!-- 	<servlet-name>addServlet1</servlet-name> -->
+<!-- 	 References the servlet defined above by its name.  -->
+ 	
+<!-- 	<url-pattern>/add</url-pattern> -->
+<!-- 	 URL pattern that this servlet will handle. Requests to /add will be processed by servlet1.  -->
+<!-- </servlet-mapping>-->
+ 
+ <servlet> 
+ 	<servlet-name>sqServlet1</servlet-name> 
+ 	<!-- Unique name for the servlet. Used to reference the servlet in the servlet-mapping element. --> 
+ 	
+ 	<servlet-class>com.hema2.SqServlet2</servlet-class> 
+ 	<!-- Fully qualified class name of the servlet. This class must implement the javax.servlet.Servlet interface. --> 
+ 	
+ 	<init-param>
+ 		<param-name>name</param-name>
+ 		<param-value>Hema</param-value>
+ 	</init-param>
+ 	
+ </servlet> 
+ 	
+ <servlet-mapping> 
+ 	<servlet-name>sqServlet1</servlet-name> 
+ 	<!-- References the servlet defined above by its name. --> 
+ 	
+ 	<url-pattern>/sq</url-pattern> 
+ 	<!-- URL pattern that this servlet will handle. Requests to /add will be processed by servlet1. --> 
+ </servlet-mapping>
+ 
+ <context-param>
+ 	<param-name>name</param-name>
+ 	<param-value>Chandru</param-value>
+ </context-param>
+ 
+</web-app>

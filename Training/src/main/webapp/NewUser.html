@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Home1</title>
+
+<style type="text/css">
+		.hello{
+			
+			background-color: aliceblue;
+		}
+</style>
+
+<script type="text/javascript">
+	function myFunction() {
+		var user = document.getElementById("uname").value;
+		var pass = document.getElementById("pass").value;
+		var cpass = document.getElementById("cpass").value;
+
+		console.log(user + "" + pass);
+// 		alert(user + "" + pass);
+
+		if(user == "") {
+			alert("Enter the username");
+			return false;
+		}
+		
+		if(pass == "") {
+			alert("Enter the password");
+			return false;
+		}
+		
+		if(cpass == "") {
+			alert("Enter the Confirm password");
+			return false;
+		}
+	}
+
+</script>
+
+</head>
+<body class="hello">
+	<h1 align="center">SignUp Page</h1>
+	<form action="AddNewUser" onsubmit="return myFunction()" method="post">
+
+		<table align="center">
+			<tr>
+				<td>User Name: </td>
+				<td><input type="text" id="uname" name="uname"/> </td>
+			</tr>
+
+			<tr>
+				<td>Password: </td>
+				<td><input type="password" id="pass" name="pass"/></td>
+			</tr>
+
+			<tr>
+				<td>Confirm Password: </td>
+				<td><input type="password" id="cpass" name="cpass"/></td>
+			</tr>
+
+			<tr>
+				<td></td>
+				<td><input type="submit"/></td>
+			</tr>
+		</table>
+		
+		
+	</form>
+</body>
+</html>
